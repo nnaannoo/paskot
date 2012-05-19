@@ -76,9 +76,6 @@ if(!isset($_SERVER['PHP_AUTH_PW'])) {
     return;
 }
 
-print("hola");
-return;
-
 // split username & domain if received as one
 global $auth_user;
 $pos = strrpos($_SERVER['PHP_AUTH_USER'], '\\');
@@ -94,6 +91,9 @@ $auth_pw = $_SERVER['PHP_AUTH_PW'];
 debugLog("Start");
 debugLog("Z-Push version: $zpush_version");
 debugLog("Client IP: ". $_SERVER['REMOTE_ADDR']);
+
+print("hola");
+return;
 
 $cmd = $user = $devid = $devtype = "";
 
