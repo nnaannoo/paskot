@@ -76,8 +76,8 @@ if(!isset($_SERVER['PHP_AUTH_PW'])) {
     return;
 }
 
-// print("hola");
-// return;
+print("hola");
+return;
 
 // split username & domain if received as one
 global $auth_user;
