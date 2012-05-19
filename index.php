@@ -59,6 +59,9 @@ include_once("version.php");
 ini_set('max_execution_time', SCRIPT_TIMEOUT);
 set_time_limit(SCRIPT_TIMEOUT);
 
+print($_SERVER['SCRIPT_FILENAME']);
+return;
+
 $input = fopen("php://input", "r");
 $output = fopen("php://output", "w+");
 
