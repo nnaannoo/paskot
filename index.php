@@ -59,11 +59,13 @@ include_once("version.php");
 ini_set('max_execution_time', SCRIPT_TIMEOUT);
 set_time_limit(SCRIPT_TIMEOUT);
 
+$input = fopen("php://input", "r");
+$output = fopen("php://output", "w+");
+
 print("hola");
 return;
 
-$input = fopen("php://input", "r");
-$output = fopen("php://output", "w+");
+
 
 // The script must always be called with authorisation info
 if(!isset($_SERVER['PHP_AUTH_PW'])) {
