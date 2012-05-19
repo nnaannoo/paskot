@@ -45,7 +45,7 @@
 
 //ob_start(false, 1048576);
 
-exit;
+
 
 include_once('zpushdefs.php');
 include_once("config.php");
@@ -54,6 +54,9 @@ include_once("request.php");
 include_once("debug.php");
 include_once("compat.php");
 include_once("version.php");
+
+print("hola");
+return;
 
 // Attempt to set maximum execution time
 ini_set('max_execution_time', SCRIPT_TIMEOUT);
