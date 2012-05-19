@@ -55,9 +55,6 @@ include_once("debug.php");
 include_once("compat.php");
 include_once("version.php");
 
-print("hola");
-return;
-
 // Attempt to set maximum execution time
 ini_set('max_execution_time', SCRIPT_TIMEOUT);
 set_time_limit(SCRIPT_TIMEOUT);
@@ -78,6 +75,9 @@ if(!isset($_SERVER['PHP_AUTH_PW'])) {
     debugLog("--------");    
     return;
 }
+
+print("hola");
+return;
 
 // split username & domain if received as one
 global $auth_user;
