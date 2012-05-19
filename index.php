@@ -88,7 +88,7 @@ if($pos === false){
 }
 $auth_pw = $_SERVER['PHP_AUTH_PW'];
 
-print("hola");
+print("hola 2");
 return;
 
 debugLog("Start");
