@@ -76,6 +76,9 @@ if(!isset($_SERVER['PHP_AUTH_PW'])) {
     return;
 }
 
+print("hola 2");
+return;
+
 // split username & domain if received as one
 global $auth_user;
 $pos = strrpos($_SERVER['PHP_AUTH_USER'], '\\');
@@ -87,9 +90,6 @@ if($pos === false){
     $auth_user = substr($_SERVER['PHP_AUTH_USER'],$pos+1);
 }
 $auth_pw = $_SERVER['PHP_AUTH_PW'];
-
-print("hola 2");
-return;
 
 debugLog("Start");
 debugLog("Z-Push version: $zpush_version");
