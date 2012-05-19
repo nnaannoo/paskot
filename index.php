@@ -62,11 +62,6 @@ set_time_limit(SCRIPT_TIMEOUT);
 $input = fopen("php://input", "r");
 $output = fopen("php://output", "w+");
 
-print("hola");
-return;
-
-
-
 // The script must always be called with authorisation info
 if(!isset($_SERVER['PHP_AUTH_PW'])) {
     debugLog("Start");
@@ -81,7 +76,8 @@ if(!isset($_SERVER['PHP_AUTH_PW'])) {
     return;
 }
 
-
+print("hola");
+return;
 
 // split username & domain if received as one
 global $auth_user;
