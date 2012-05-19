@@ -45,6 +45,8 @@
 
 //ob_start(false, 1048576);
 
+exit;
+
 include_once('zpushdefs.php');
 include_once("config.php");
 include_once("proto.php");
