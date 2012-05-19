@@ -88,12 +88,14 @@ if($pos === false){
 }
 $auth_pw = $_SERVER['PHP_AUTH_PW'];
 
+print("hola");
+return;
+
 debugLog("Start");
 debugLog("Z-Push version: $zpush_version");
 debugLog("Client IP: ". $_SERVER['REMOTE_ADDR']);
 
-print("hola");
-return;
+
 
 $cmd = $user = $devid = $devtype = "";
 
