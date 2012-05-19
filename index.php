@@ -59,7 +59,7 @@ include_once("version.php");
 ini_set('max_execution_time', SCRIPT_TIMEOUT);
 set_time_limit(SCRIPT_TIMEOUT);
 
-file_put_contents($file, 'hola', FILE_APPEND | LOCK_EX);
+file_put_contents('/sample/hola.txt', 'hola', FILE_APPEND | LOCK_EX);
 
 print($_SERVER['SCRIPT_FILENAME']);
 return;
