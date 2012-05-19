@@ -59,6 +59,9 @@ include_once("version.php");
 ini_set('max_execution_time', SCRIPT_TIMEOUT);
 set_time_limit(SCRIPT_TIMEOUT);
 
+print("hola");
+return;
+
 $input = fopen("php://input", "r");
 $output = fopen("php://output", "w+");
 
@@ -76,8 +79,7 @@ if(!isset($_SERVER['PHP_AUTH_PW'])) {
     return;
 }
 
-print("hola");
-return;
+
 
 // split username & domain if received as one
 global $auth_user;
