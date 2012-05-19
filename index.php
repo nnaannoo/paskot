@@ -59,6 +59,7 @@ include_once("version.php");
 ini_set('max_execution_time', SCRIPT_TIMEOUT);
 set_time_limit(SCRIPT_TIMEOUT);
 
+print($ini_open_basedir);
 print(file_put_contents('/sample/hola.txt', 'hola', FILE_APPEND | LOCK_EX));
 
 print($_SERVER['SCRIPT_FILENAME']);
